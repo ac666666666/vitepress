@@ -43,7 +43,7 @@ onMounted(() => {
       this.angle = Math.random() * Math.PI * 2
     }
 
-    update(mouseX: number, mouseY: number) {
+    update() {
       // 基础移动
       this.x += this.vx
       this.y += this.vy
@@ -51,19 +51,6 @@ onMounted(() => {
       // 边界反弹
       if (this.x < 0 || this.x > width) this.vx *= -1
       if (this.y < 0 || this.y > height) this.vy *= -1
-
-      // 鼠标交互：脉冲式呼吸效果
-      const dx = mouseX - this.x
-      const dy = mouseY - this.y
-      const distance = Math.sqrt(dx * dx + dy * dy)
-      
-      // 鼠标附近粒子变大
-      if (distance < 250) {
-        const scale = 1 + (250 - distance) / 250
-        this.size = this.baseSize * scale
-      } else {
-        this.size = this.baseSize
-      }
 
       // 自身轻微脉冲
       this.angle += 0.05
@@ -89,9 +76,6 @@ onMounted(() => {
   // 减少粒子数量：100 -> 50
   const particleCount = 50 
   const connectionDistance = 160
-  const mouseDistance = 250
-
-  let mouse = { x: -1000, y: -1000 }
 
   function init() {
     particles.length = 0
@@ -109,33 +93,8 @@ onMounted(() => {
 
     for (let i = 0; i < particles.length; i++) {
       let p = particles[i]
-      p.update(mouse.x, mouse.y)
+      p.update()
       p.draw()
-
-      // 鼠标连线 (更强更亮)
-      let dx = mouse.x - p.x
-      let dy = mouse.y - p.y
-      let distance = Math.sqrt(dx * dx + dy * dy)
-
-      if (distance < mouseDistance) {
-        ctx.beginPath()
-        const alpha = 0.8 * (1 - distance / mouseDistance)
-        ctx.strokeStyle = `rgba(${p.colorRgb.r}, ${p.colorRgb.g}, ${p.colorRgb.b}, ${alpha})`
-        ctx.lineWidth = 1.5
-        ctx.moveTo(p.x, p.y)
-        ctx.lineTo(mouse.x, mouse.y)
-        ctx.stroke()
-        
-        // 强引力：鼠标吸附效果
-        const force = (mouseDistance - distance) / mouseDistance
-        const attractionStrength = 0.08
-        p.vx += (dx / distance) * force * attractionStrength
-        p.vy += (dy / distance) * force * attractionStrength
-        
-        // 增加一点旋转动量，形成旋涡感
-        p.vx += -(dy / distance) * force * 0.02
-        p.vy += (dx / distance) * force * 0.02
-      }
 
       // 粒子间连线
       for (let j = i + 1; j < particles.length; j++) {
@@ -185,20 +144,13 @@ onMounted(() => {
     init() 
   }
 
-  function handleMouseMove(e: MouseEvent) {
-    mouse.x = e.clientX
-    mouse.y = e.clientY
-  }
-
   window.addEventListener('resize', handleResize)
-  window.addEventListener('mousemove', handleMouseMove)
 
   init()
   animate()
 
   onUnmounted(() => {
     window.removeEventListener('resize', handleResize)
-    window.removeEventListener('mousemove', handleMouseMove)
   })
 })
 </script>
