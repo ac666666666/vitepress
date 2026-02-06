@@ -109,8 +109,8 @@ export default defineConfig({
 
     // 页脚
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024-present'
+      message: 'Power by VitePress',
+      copyright: 'Copyright © 2026-present Ac-Study | All Rights Reserved'
     }
   }
 })

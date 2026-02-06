@@ -3,18 +3,15 @@ layout: home
 
 hero:
   name: "Ac-Study"
-  text: "由 Vite 和 Vue 驱动的静态站点生成器"
-  tagline: 将 Markdown 变成优雅的文档，只需几分钟
+  text: "星光不问赶路人，时光不负有心人"
+  tagline: 既然选择了远方，便只顾风雨兼程
   actions:
     - theme: brand
       text: 什么是 Ac-Study?
       link: /knowledge/
     - theme: alt
       text: 快速开始
-      link: /knowledge/getting-started
-  image:
-    src: /image.png
-    alt: Ac-Study Logo
+      link: /knowledge/html-css
 
 features:
   - title: Who is AC?
