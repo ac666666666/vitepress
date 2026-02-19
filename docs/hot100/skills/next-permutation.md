@@ -5,6 +5,8 @@ sidebar_position: 4
 
 # 31. 下一个排列
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/next-permutation/)
+
 ## 题目描述
 
 整数数组的一个 **排列**  就是将其所有成员以序列或线性顺序排列。

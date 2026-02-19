@@ -1,5 +1,7 @@
 # 最长递增子序列
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/longest-increasing-subsequence/)
+
 ## 题目描述
 
 给你一个整数数组 `nums` ，找到其中最长严格递增子序列的长度。

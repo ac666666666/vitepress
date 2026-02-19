@@ -1,5 +1,7 @@
 # 盛最多水的容器
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/container-with-most-water/)
+
 ## 1. 题目呈现
 
 **难度等级**：🟡 中等  

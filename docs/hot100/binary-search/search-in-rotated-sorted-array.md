@@ -1,5 +1,7 @@
 # 33. 搜索旋转排序数组
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/search-in-rotated-sorted-array/)
+
 [题目链接](https://leetcode.cn/problems/search-in-rotated-sorted-array/)
 
 ## 题目描述

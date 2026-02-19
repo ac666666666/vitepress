@@ -1,5 +1,7 @@
 # 单词搜索
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/word-search/)
+
 ## 1. 题目呈现
 
 [LeetCode 79. Word Search](https://leetcode.com/problems/word-search/)

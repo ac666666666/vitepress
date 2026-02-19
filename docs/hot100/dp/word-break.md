@@ -1,5 +1,7 @@
 # 单词拆分
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/word-break/)
+
 ## 题目描述
 
 给你一个字符串 `s` 和一个字符串列表 `wordDict` 作为字典。请你判断是否可以利用字典中出现的单词拼接出 `s` 。

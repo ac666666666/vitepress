@@ -1,5 +1,7 @@
 # 字符串解码
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/decode-string/)
+
 ## 1. 题目呈现
 
 [LeetCode 链接](https://leetcode.cn/problems/decode-string/)

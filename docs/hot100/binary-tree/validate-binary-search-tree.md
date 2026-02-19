@@ -1,5 +1,7 @@
 # 验证二叉搜索树
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/validate-binary-search-tree/)
+
 ## 1. 题目呈现
 
 **难度等级**：🟡 中等  

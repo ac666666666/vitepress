@@ -1,5 +1,7 @@
 # 缺失的第一个正数
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/first-missing-positive/)
+
 ## 1. 题目呈现
 
 **难度等级**：🔴 困难  

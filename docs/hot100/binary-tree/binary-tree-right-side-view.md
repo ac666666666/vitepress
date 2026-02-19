@@ -1,5 +1,7 @@
 # 二叉树的右视图
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/binary-tree-right-side-view/)
+
 ## 1. 题目呈现
 
 **难度等级**：🟡 中等  

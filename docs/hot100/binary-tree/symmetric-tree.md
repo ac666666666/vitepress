@@ -1,5 +1,7 @@
 # 对称二叉树
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/symmetric-tree/)
+
 ## 1. 题目呈现
 
 **难度等级**：🟢 简单  

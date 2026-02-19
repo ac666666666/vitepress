@@ -1,5 +1,7 @@
 # 二叉树中的最大路径和
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/binary-tree-maximum-path-sum/)
+
 ## 1. 题目呈现
 
 **难度等级**：🔴 困难  

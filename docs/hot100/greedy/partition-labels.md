@@ -1,5 +1,7 @@
 # 划分字母区间
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/partition-labels/)
+
 ## 题目描述
 
 给你一个字符串 `s` 。我们要把这个字符串划分为尽可能多的片段，同一字母最多出现在一个片段中。

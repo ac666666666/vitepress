@@ -1,5 +1,7 @@
 # 有效的括号
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/valid-parentheses/)
+
 ## 1. 题目呈现
 
 [LeetCode 链接](https://leetcode.cn/problems/valid-parentheses/)

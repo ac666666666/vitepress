@@ -1,5 +1,7 @@
 # 电话号码的字母组合
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/)
+
 ## 1. 题目呈现
 
 [LeetCode 17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)

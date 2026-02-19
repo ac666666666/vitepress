@@ -1,5 +1,7 @@
 # 完全平方数
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/perfect-squares/)
+
 ## 题目描述
 
 给你一个整数 `n` ，返回 *和为 `n` 的完全平方数的最少数量* 。

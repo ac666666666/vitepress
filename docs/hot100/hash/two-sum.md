@@ -1,5 +1,7 @@
 # 两数之和
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/two-sum/)
+
 ## 1. 题目呈现
 
 **难度等级**：🟢 简单  

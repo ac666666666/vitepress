@@ -1,5 +1,7 @@
 # K 个一组翻转链表
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/reverse-nodes-in-k-group/)
+
 ## 1. 题目呈现
 
 **难度等级**：🔴 困难  

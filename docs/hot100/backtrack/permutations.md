@@ -1,5 +1,7 @@
 # 全排列
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/permutations/)
+
 ## 1. 题目呈现
 
 [LeetCode 46. Permutations](https://leetcode.com/problems/permutations/)

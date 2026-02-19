@@ -1,5 +1,7 @@
 # 最长回文子串
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/longest-palindromic-substring/)
+
 ## 题目描述
 
 给你一个字符串 `s`，找到 `s` 中最长的回文子串。

@@ -1,5 +1,7 @@
 # 滑动窗口最大值
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/sliding-window-maximum/)
+
 ## 1. 题目呈现
 
 **难度等级**：🔴 困难  

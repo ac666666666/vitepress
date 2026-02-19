@@ -1,5 +1,7 @@
 # 最小覆盖子串
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/minimum-window-substring/)
+
 ## 1. 题目呈现
 
 **难度等级**：🔴 困难  

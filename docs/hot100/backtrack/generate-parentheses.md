@@ -1,5 +1,7 @@
 # 括号生成
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/generate-parentheses/)
+
 ## 1. 题目呈现
 
 [LeetCode 22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)

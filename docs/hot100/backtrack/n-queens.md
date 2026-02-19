@@ -1,5 +1,7 @@
 # 51. N 皇后
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/n-queens/)
+
 [题目链接](https://leetcode.cn/problems/n-queens/)
 
 ## 题目描述

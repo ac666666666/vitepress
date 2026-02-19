@@ -1,5 +1,7 @@
 # 组合总和
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/combination-sum/)
+
 ## 1. 题目呈现
 
 [LeetCode 39. Combination Sum](https://leetcode.com/problems/combination-sum/)

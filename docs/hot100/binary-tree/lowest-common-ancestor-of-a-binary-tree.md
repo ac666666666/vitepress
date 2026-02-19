@@ -1,5 +1,7 @@
 # 二叉树的最近公共祖先
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/)
+
 ## 1. 题目呈现
 
 **难度等级**：🟡 中等  

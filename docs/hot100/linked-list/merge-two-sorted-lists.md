@@ -1,5 +1,7 @@
 # 合并两个有序链表
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/merge-two-sorted-lists/)
+
 ## 1. 题目呈现
 
 **难度等级**：🟢 简单  

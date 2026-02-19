@@ -5,6 +5,8 @@ sidebar_position: 3
 
 # 75. 颜色分类
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/sort-colors/)
+
 ## 题目描述
 
 给定一个包含红色、白色和蓝色、共 `n` 个元素的数组 `nums` ，**[原地](https://baike.baidu.com/item/%E5%8E%9F%E5%9C%B0%E7%AE%97%E6%B3%95)** 对它们进行排序，使得相同颜色的元素相邻，并按照红色、白色、蓝色顺序排列。

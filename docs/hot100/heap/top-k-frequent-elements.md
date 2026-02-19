@@ -1,5 +1,7 @@
 # 347. 前 K 个高频元素
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/top-k-frequent-elements/)
+
 ## 1. 题目呈现
 
 [LeetCode 链接](https://leetcode.cn/problems/top-k-frequent-elements/)

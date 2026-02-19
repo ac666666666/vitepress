@@ -1,5 +1,7 @@
 # 和为 K 的子数组
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/subarray-sum-equals-k/)
+
 ## 1. 题目呈现
 
 **难度等级**：🟡 中等  

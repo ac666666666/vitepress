@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
+import cesium from 'vite-plugin-cesium'
 
 // 统一的知识库侧边栏
 function getKnowledgeSidebar() {
@@ -13,29 +15,108 @@ function getKnowledgeSidebar() {
       text: 'JavaScript/ES6/TypeScript',
       collapsed: false,
       items: [
-        { text: 'JavaScript 基础', link: '/knowledge/javascript' }
+        {
+          text: 'JavaScript',
+          collapsed: false,
+          items: [
+            { text: '基础类型', link: '/knowledge/javascript/core/data-types' },
+            { text: '执行机制与作用域', link: '/knowledge/javascript/core/execution' },
+            { text: '内存管理', link: '/knowledge/javascript/core/memory' },
+            { text: '原型与继承', link: '/knowledge/javascript/core/oop' },
+            { text: '数组与字符串', link: '/knowledge/javascript/core/array-string' },
+            { text: 'DOM 与 BOM', link: '/knowledge/javascript/core/dom-bom' },
+            { text: '防抖与节流', link: '/knowledge/javascript/core/debounce-throttle' },
+            { text: '进阶话题 (函数式/依赖注入)', link: '/knowledge/javascript/core/advanced' },
+            { text: '浏览器原理与网络', link: '/knowledge/network/browser' }
+          ]
+        },
+        {
+          text: 'ES6',
+          collapsed: false,
+          items: [
+            { text: '基础特性', link: '/knowledge/javascript/es6/base' },
+            { text: 'Promise', link: '/knowledge/javascript/es6/promise' },
+            { text: 'Async/Await', link: '/knowledge/javascript/es6/async-await' }
+          ]
+        },
+        {
+          text: 'TypeScript',
+          collapsed: false,
+          items: [
+            { text: '基础类型', link: '/knowledge/javascript/typescript/base' },
+            { text: '接口', link: '/knowledge/javascript/typescript/interface' },
+            { text: '泛型', link: '/knowledge/javascript/typescript/generics' }
+          ]
+        }
       ]
     },
     {
       text: 'HTML&CSS',
       collapsed: false,
       items: [
-        { text: 'HTML & CSS 高频题', link: '/knowledge/html-css' }
+        { text: 'HTML', link: '/knowledge/html-css/html' },
+        { text: 'CSS', link: '/knowledge/html-css/css' }
       ]
     },
     {
       text: '计算机网络',
       collapsed: false,
       items: [
-        { text: '网络协议', link: '/knowledge/network' }
+        { text: 'HTTP协议', link: '/knowledge/network/http' },
+        { text: 'TCP/IP协议', link: '/knowledge/network/tcp' },
+        { text: '浏览器原理与网络', link: '/knowledge/network/browser' },
+        { text: '网络安全', link: '/knowledge/network/security' }
+      ]
+    },
+    {
+      text: '前端工程化',
+      collapsed: false,
+      items: [
+        { text: '工程化体系', link: '/knowledge/engineering/index' },
+        { text: 'Webpack 深度解析', link: '/knowledge/engineering/webpack' },
+        { text: 'Vite 原理与实战', link: '/knowledge/engineering/vite' },
+        { text: '模块化规范', link: '/knowledge/engineering/module' },
+        { text: '包管理与 Monorepo', link: '/knowledge/engineering/package-manager' },
+        { text: '前端规范化', link: '/knowledge/engineering/standard' },
+        { text: '自动化部署 (CI/CD)', link: '/knowledge/engineering/cicd' }
       ]
     },
     {
       text: '前端框架',
       collapsed: false,
       items: [
-        { text: 'Vue', link: '/knowledge/vue' },
-        { text: 'React', link: '/knowledge/react' }
+        {
+          text: 'Vue',
+          collapsed: false,
+          items: [
+            { text: 'Vue 基础', link: '/knowledge/framework/vue/base' },
+            { text: '生命周期', link: '/knowledge/framework/vue/lifecycle' },
+            { text: '计算属性与侦听器', link: '/knowledge/framework/vue/computed-watch' },
+            { text: '组件通信', link: '/knowledge/framework/vue/communication' },
+            { text: '路由', link: '/knowledge/framework/vue/router' },
+            { text: 'Vuex', link: '/knowledge/framework/vue/vuex' },
+            { text: 'Pinia', link: '/knowledge/framework/vue/pinia' },
+            { text: 'Vue 3.0', link: '/knowledge/framework/vue/vue3' },
+            { text: '性能优化', link: '/knowledge/framework/vue/optimization' },
+            { text: '虚拟 DOM', link: '/knowledge/framework/vue/virtual-dom' }
+          ]
+        },
+        {
+          text: 'React',
+          collapsed: false,
+          items: [
+            { text: 'React 知识体系', link: '/knowledge/framework/react/index' },
+            { text: '基础与虚拟 DOM', link: '/knowledge/framework/react/base' },
+            { text: '组件生命周期', link: '/knowledge/framework/react/lifecycle' },
+            { text: 'Hooks 深度解析', link: '/knowledge/framework/react/hooks' },
+            { text: 'Fiber 架构', link: '/knowledge/framework/react/fiber' },
+            { text: 'Diff 算法与性能', link: '/knowledge/framework/react/diff' },
+            { text: '状态管理', link: '/knowledge/framework/react/state-management' },
+            { text: 'React Router', link: '/knowledge/framework/react/router' },
+            { text: '进阶模式', link: '/knowledge/framework/react/patterns' },
+            { text: 'React vs Vue', link: '/knowledge/framework/react/react-vs-vue' }
+          ]
+        }
       ]
     },
     {
@@ -49,17 +130,11 @@ function getKnowledgeSidebar() {
       text: '前端纵向领域',
       collapsed: false,
       items: [
-        { text: '前端安全', link: '/knowledge/security' },
         { text: 'Node.js', link: '/knowledge/node' },
         { text: '数据可视化', link: '/knowledge/visualization' },
-        { text: 'Three.js', link: '/knowledge/threejs' }
-      ]
-    },
-    {
-      text: '工程化',
-      collapsed: false,
-      items: [
-        { text: '前端工程化', link: '/knowledge/engineering' }
+        { text: 'Three.js', link: '/knowledge/threejs' },
+        { text: '服务端渲染 (SSR)', link: '/knowledge/ssr' },
+        { text: '设计模式', link: '/knowledge/design-patterns' }
       ]
     }
   ]
@@ -272,9 +347,23 @@ function getHot100Sidebar() {
   ]
 }
 
-export default defineConfig({
+export default withMermaid(defineConfig({
   title: "Ac-Study",
   description: "前端八股文与面试总结",
+  mermaid: {
+    // mermaidConfig: {
+    //   securityLevel: 'loose',
+    // },
+  },
+  vite: {
+    plugins: [cesium()],
+    ssr: {
+      noExternal: ['mermaid', 'vitepress-plugin-mermaid']
+    },
+    optimizeDeps: {
+      include: ['mermaid']
+    }
+  },
   themeConfig: {
     // 顶部左侧 Logo
     logo: '/image.png',
@@ -282,7 +371,7 @@ export default defineConfig({
     // 顶部导航栏
     nav: [
       { text: '首页', link: '/' },
-      { text: '知识库', link: '/knowledge/html-css', activeMatch: '/knowledge/' },
+      { text: '知识库', link: '/knowledge/', activeMatch: '/knowledge/' },
       { text: '面经总结', link: '/interview/' },
       { text: 'Hot100', link: '/hot100/' },
       { text: '一起学习', link: '/study/' }
@@ -322,4 +411,4 @@ export default defineConfig({
       copyright: 'Copyright © 2026-present Ac-Study | All Rights Reserved'
     }
   }
-})
+}))

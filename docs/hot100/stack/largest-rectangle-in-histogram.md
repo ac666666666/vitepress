@@ -1,5 +1,7 @@
 # 柱状图中最大的矩形
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/largest-rectangle-in-histogram/)
+
 ## 1. 题目呈现
 
 [LeetCode 链接](https://leetcode.cn/problems/largest-rectangle-in-histogram/)

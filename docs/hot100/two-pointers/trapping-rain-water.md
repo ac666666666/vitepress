@@ -1,5 +1,7 @@
 # 接雨水
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/trapping-rain-water/)
+
 ## 1. 题目呈现
 
 **难度等级**：🔴 困难  

@@ -1,5 +1,7 @@
 # 子集
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/subsets/)
+
 ## 1. 题目呈现
 
 [LeetCode 78. Subsets](https://leetcode.com/problems/subsets/)

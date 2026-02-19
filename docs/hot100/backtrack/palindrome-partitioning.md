@@ -1,5 +1,7 @@
 # 分割回文串
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/palindrome-partitioning/)
+
 ## 1. 题目呈现
 
 [LeetCode 131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)

@@ -1,5 +1,7 @@
 # 最长有效括号
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/longest-valid-parentheses/)
+
 ## 题目描述
 
 给你一个只包含 `'('` 和 `')'` 的字符串，找出最长有效（格式正确且连续）括号子串的长度。

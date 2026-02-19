@@ -1,5 +1,7 @@
 # 二叉搜索树中第K小的元素
 
+[LeetCode 官方题目链接](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/)
+
 ## 1. 题目呈现
 
 **难度等级**：🟡 中等  
